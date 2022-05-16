@@ -1,7 +1,37 @@
+/* setup */
 * {
     box-sizing: border-box;
 }
 
+picture, img {
+    display: block;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+p a, li a {
+    color: pink;
+    text-decoration: underline;
+}
+
+/*dev style*/
+body * {
+    /* border: 1px solid palevioletred; */
+    padding: 2px;
+}
+/*
 section {
     border: 8px solid peachpuff;
 }
@@ -10,19 +40,101 @@ header, footer, main {
     border: 4px solid paleturquoise;
 }
 
+/* structure */
 body {
     display: flex;
     flex-direction: column;
-    border: 10px solid palegoldenrod;
+   /* border: 10px solid palegoldenrod; */
     min-height: 100vh;
 }
 
 main {
     flex-grow: 1;
-    border: 10px solid lightskyblue
+    /* border: 10px solid lightskyblue */
 }
 
 inner-column {
     display: block;
-    border: 4px solid plum;
+    /* border: 4px solid plum; */
+    width: 98%;
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* TYPOGRAPHY */
+.loud-voice {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: .9;
+}
+@media (min-width: 700px) {
+    .loud-voice {
+        font-size: 30px;
+    }
+}
+.calm-voice {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1rem;
+    line-height: 1;
+}
+
+/* COMPONENTS */
+
+.button {
+    background-color: lightpink;
+    color: palevioletred;
+    font-size: 1.2rem;
+    padding: 5px 5px;
+    border-radius: 6px;
+}
+
+/* MODULES */
+
+
+graphic-diptych {
+    display: block;
+    padding: 10px;
+}
+
+graphic-diptych text-content {
+    display: block;
+    padding: 10px;
+}
+
+graphic-diptych picture {
+    padding: 10px;
+}
+
+@media (min-width: 700px) {
+    graphic-diptych {
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
+        padding-top: 15px;
+        padding-bottom: 15px;
+    }
+    graphic-diptych :is(text-content, picture) {
+        flex-basis: 50%;
+       /* border: 1px solid palevioletred */
+    }
+}
+
+item-grid {
+    display: flex;
+    flex-direction: row;
+}
+
+.section-one {
+    background-color: lightcoral;
+    color: peachpuff;
+    border-radius: 6px;
+}
+
+.section-one .button {
+    background-color: peachpuff;
+    color: lightcoral;
+    margin-top: 40px;
+    margin-bottom: 40px;
 }
