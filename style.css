@@ -1,4 +1,7 @@
-/* setup */
+/* SETUP */
+html {
+    background-color:rgb(249, 246, 252);
+}
 * {
     box-sizing: border-box;
 }
@@ -26,32 +29,19 @@ p a, li a {
     text-decoration: underline;
 }
 
-/*dev style*/
 body * {
-     /* border: 1px solid palevioletred; */
      padding: 2px; 
 }
-/*
-section {
-    border: 8px solid peachpuff;
-}
 
-header, footer, main {
-    border: 4px solid paleturquoise;
-}
-
-/* structure */
 body {
     display: flex;
     flex-direction: column;
-   /* border: 10px solid palegoldenrod; */
     min-height: 100vh;
     margin: 0;
 }
 
 main {
     flex-grow: 1;
-    /*border: 10px solid lightskyblue */
     margin: 0;
     padding: 0;
 
@@ -59,13 +49,10 @@ main {
 
 inner-column {
     display: block;
-    /* border: 4px solid plum; */
     width: 98%;
     max-width: 800px;
     margin-left: auto;
     margin-right: auto;
-
-    padding-top: 10vh;
     padding-bottom: 10vh;
 }
 
@@ -78,8 +65,14 @@ footer inner-column {
 
 }
 
+header, footer {
+    background-color: rgb(246, 235, 246);
+}
+
+
 
 /* TYPOGRAPHY */
+
 .loud-voice {
     font-family: 'Courier New', Courier, monospace;
     font-size: 30px;
@@ -107,9 +100,6 @@ footer inner-column {
     font-family: 'Courier New', Courier, monospace;
 }
 
-/* MODULES */
-
-
 graphic-diptych {
     display: block;
     padding: 10px;
@@ -134,13 +124,7 @@ graphic-diptych picture {
     }
     graphic-diptych :is(text-content, picture) {
         flex-basis: 50%;
-       /* border: 1px solid palevioletred */
     }
-}
-
-
-header, footer {
-    background-color: rgb(246, 235, 246);
 }
 
 inner-column .logo {
@@ -204,16 +188,19 @@ page-header .header-links {
     display: flex;
     justify-content: center;
     padding-bottom: 5vh;
+    margin-top: 1vh;
     color: rgb(187, 144, 187);
 }
 
 .section-three {
-    background-color: rgb(236, 246, 251);
+    background-color: rgb(231, 232, 248);
     font-family: 'Courier New', Courier, monospace;
+    padding-top: 10vh;
 }
 
 .section-three .quote {
     color: rgb(126, 83, 149);
+    font-style: italic;
 }
 
 .section-three .quote-source {
@@ -223,23 +210,53 @@ page-header .header-links {
     justify-content: end;
 }
 
+.section-four end-content {
+    font-family: 'Courier New', Courier, monospace;
+    background-color: rgb(148, 121, 229);
+    border-radius: 25px;
+}
+
+.section-four .end-header {
+    font-weight: 800;
+    font-size: large;
+}
+
+.section-four {
+    margin-top: 5vh;
+}
+end-content {
+    display: flex;
+    margin-top: 4vh;
+    align-items: center;
+    justify-content: center;
+    height: 250px;
+}
+
+end-content .end-header {
+    margin-left: 5vh;
+    align-self: flex-start;
+}
+
+end-content .end-text {
+    margin-left: 5vh;
+    padding-bottom: 0;
+}
+
+end-content .button {
+    border: 2px solid whitesmoke;
+    display: flex;
+    margin-bottom: 5vh;
+    margin-right: 5vh;
+    margin-top: 5vh;
+    margin-left: 2vh;
+    font-weight: 600;
+    border-radius: 6px;
+
+}
+
 page-footer .footer-text {
     display: flex;
     justify-content: center;
     font-size: small;
     color: rgb(81, 121, 194);
 }
-/*
-item-grid {
-    display: block;
-}
-
-.items {
-
-}
-item-grid .item-list{
-    display:grid;
-    grid-template-columns: repeat(auto-fill, minmax(275px, 1fr));
-    grid-gap: 1em;
-}
-*/
