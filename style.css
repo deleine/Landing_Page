@@ -22,14 +22,14 @@ li {
 }
 
 p a, li a {
-    color: pink;
+    color: plum;
     text-decoration: underline;
 }
 
 /*dev style*/
 body * {
-    /* border: 1px solid palevioletred; */
-    padding: 2px;
+     /* border: 1px solid palevioletred; */
+     padding: 2px; 
 }
 /*
 section {
@@ -46,11 +46,15 @@ body {
     flex-direction: column;
    /* border: 10px solid palegoldenrod; */
     min-height: 100vh;
+    margin: 0;
 }
 
 main {
     flex-grow: 1;
-    /* border: 10px solid lightskyblue */
+    /*border: 10px solid lightskyblue */
+    margin: 0;
+    padding: 0;
+
 }
 
 inner-column {
@@ -96,11 +100,10 @@ footer inner-column {
 /* COMPONENTS */
 
 .button {
-    background-color: lightpink;
-    color: palevioletred;
-    font-size: 1.2rem;
-    padding: 5px 5px;
+    font-weight: 600;
+    padding: 1.5vh 1.5vh;
     border-radius: 6px;
+    font-family: 'Courier New', Courier, monospace;
 }
 
 /* MODULES */
@@ -135,14 +138,13 @@ graphic-diptych picture {
 }
 
 .section-one {
-    background-color: lightcoral;
-    color: peachpuff;
-    border-radius: 6px;
+    background-color: rgb(246, 235, 246);
+    color: rgb(124, 102, 150);
 }
 
 .section-one .button {
-    background-color: peachpuff;
-    color: lightcoral;
+    background-color: rgb(205, 92, 150);
+    color: rgb(211, 220, 244);
     margin-top: 40px;
     margin-bottom: 40px;
 }
@@ -154,7 +156,8 @@ graphic-diptych picture {
 } 
 
 .item-list img {
-    border-radius: 10px;
+    border-radius: 20px;
+    border: 1px solid rgb(98, 58, 163);
 }
 
 .items {
@@ -175,6 +178,31 @@ graphic-diptych picture {
     justify-content: center;
     padding-bottom: 5vh;
     color: rgb(187, 144, 187);
+}
+
+header {
+    background-color: rgb(246, 235, 246);
+}
+
+inner-column .logo {
+    color: rgb(110, 55, 119);
+    font-family: 'Courier New', Courier, monospace;
+}
+
+page-header {
+    display: flex;
+    justify-content: space-between;
+} 
+
+page-header .header-links {
+    display: flex;
+    list-style-type: none;
+    gap: 10px;
+    padding: 2vh;
+}
+
+.header-links a {
+    text-decoration: none;
 }
 
 /*
